@@ -15,7 +15,7 @@ parser.add_argument('--output_ngc', type=int, default=3, help='output channel fo
 parser.add_argument('--input_ndc', type=int, default=3, help='input channel for discriminator')
 parser.add_argument('--output_ndc', type=int, default=1, help='output channel for discriminator')
 parser.add_argument('--batch_size', type=int, default=1, help='batch size')
-parser.add_argument('--ngf', type=int, default=64)
+parser.add_argument('--ngf', type=int, default=32)
 parser.add_argument('--ndf', type=int, default=64)
 parser.add_argument('--nb', type=int, default=9, help='the number of resnet block layer for generator')
 parser.add_argument('--input_size', type=int, default=256, help='input size')
