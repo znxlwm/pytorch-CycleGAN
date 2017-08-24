@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 class generator(nn.Module):
     # initializers
-    def __init__(self, input_nc, output_nc, ngf=64, nb=6):
+    def __init__(self, input_nc, output_nc, ngf=32, nb=6):
         super(generator, self).__init__()
         self.input_nc = input_nc
         self.output_nc = output_nc
