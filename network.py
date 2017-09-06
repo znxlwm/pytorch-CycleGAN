@@ -61,7 +61,7 @@ class discriminator(nn.Module):
         self.conv2_norm = nn.InstanceNorm2d(ndf * 2)
         self.conv3 = nn.Conv2d(ndf * 2, ndf * 4, 4, 2, 1)
         self.conv3_norm = nn.InstanceNorm2d(ndf * 4)
-        self.conv4 = nn.Conv2d(ndf * 4, ndf * 8, 4, 2, 1)
+        self.conv4 = nn.Conv2d(ndf * 4, ndf * 8, 4, 1, 1)
         self.conv4_norm = nn.InstanceNorm2d(ndf * 8)
         self.conv5 = nn.Conv2d(ndf * 8, output_nc, 4, 1, 1)
 
